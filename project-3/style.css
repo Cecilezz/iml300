@@ -1,0 +1,16 @@
+body {
+    background-color: lime;
+}
+p {
+    display: none;
+}
+img {
+    width: 200px;
+    height: 200px;
+/*    transition: width 2s, height 2s;*/
+}
+
+.larger {
+    width: 400px;
+    height: 400px;
+}
