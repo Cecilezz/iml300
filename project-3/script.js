@@ -1,15 +1,17 @@
-$(document).ready(function () {
+$(function () {
+    var partLeftPos = 0;
+    var partRightPos = 0;
 
-    $('.flower').click(function () {
-        $('p').toggle();
-    });
-    
-    $(function () {
-        $(".flower").draggable();
-    });
-    
-    $('.keyboard').click(function () {
-        $(this).toggleClass("larger");
-    });
+    $(window).scroll(function (event) {
+        var distance = $(this).scrollTop() * 2;
+        var left = partLeftPos - distance;
+        var right = partRightPos - distance;
 
-});
+        $('.left').css('left', left + "px");
+        $('.right').css('right', right + "px");
+
+        console.log(partLeftPos);
+        console.log(partRightPos);
+
+    });
+})

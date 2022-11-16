@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <!--Update with your name-->
     <title>Cecile's Homepage</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
@@ -201,24 +204,6 @@
 
 
     <footer>Fall, 2022.</footer>
-
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            });
-        }
-
-    </script>
 </body>
 
 </html>

@@ -1,16 +1,26 @@
-body {
-    background-color: lime;
-}
-p {
-    display: none;
-}
-img {
-    width: 200px;
-    height: 200px;
-/*    transition: width 2s, height 2s;*/
+.parent {
+    height: 20000px;
+    position: relative;
+    top: 0;
 }
 
-.larger {
-    width: 400px;
-    height: 400px;
+.parent .part {
+    position: fixed;
+    width: 50%;
+    background-color: #ccc;
+    top: 0;
+    z-index: 1;
+    overflow:hidden;
+}
+
+.parent .part.left {
+    left: 0px;
+}
+
+.parent .part.right {
+    right: 0px;
+}
+
+img {
+    height: 100vh;
 }

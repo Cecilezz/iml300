@@ -1,20 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <title>CodePen - Opening Door Animation Scroll</title>
+    <link rel="stylesheet" href="./style.css">
+
 </head>
 
 <body>
-    <h1>Homepage</h1>
-    <img class = "flower" src="asset/plant-2.gif" alt="">
-    <p class="paragraph">This is a paragraph</p>
-    <br>
-    <img class = "keyboard" src="asset/computer-plant.jpg" alt="">
+    <!-- partial:index.partial.html -->
+    <div class="container">
+
+        <div class="parent">
+           
+            <div class="part left">
+            <img src="./asset/bg.png" alt="background">
+            </div>
+            
+            <div class="part right">
+            <img style="float: right;" src="./asset/bg.png" alt="background">
+            </div>
+            
+        </div>
+
+    </div>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+    <script src="./script.js"></script>
 
 </body></html>
