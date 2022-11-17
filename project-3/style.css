@@ -1,15 +1,17 @@
+/*Open Door Scroll Effect*/
 .parent {
     position: relative;
-    top: 0;
+    height: 100%;
+    z-index: 10;
 }
 
 .parent .part {
     position: fixed;
-    width: 50%;
-    background-color: #ccc;
     top: 0;
-    z-index: 1;
-    overflow:hidden;
+
+    width: 50vw;
+
+    overflow: hidden;
 }
 
 .parent .part.left {
@@ -24,64 +26,30 @@ img {
     height: 100vh;
 }
 
-/*
-*/
 
+/*Page*/
 .container {
     height: 2880px;
 }
 
+/*Nav Bar*/
+.header_menu {
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, .15));
+    top: 10px;
+    left: 10px;
+    position: fixed;
+    z-index: 1;
+}
 
-.toggle{
-    position: fixed;
-    top: 40px;
-    left: 40px;
-    z-index: 3
-}
-.toggle a{
-    text-decoration: none;
-    color: #262626;
-    font-size: 24px;
-    cursor: pointer;
-}
-.menu{
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: #FFF;
-    z-index: 2;
-    transition: 0.5s;
-}
-ul{
-    margin: 0;
-    padding: 0;
+/*Sections*/
+.sec01_background {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-ul li{
-    list-style: none;
-}
-
-ul li a{
-    padding: 10px;
-    display: inline-block;
-    font-family: verdana;
-    font-size: 2em;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #262626;
-}
-ul li a:hover{
-    background: #FFFC85
-}
-.menu.active{
     left: 0;
-    overflow: auto;
+    top: 0;
+    width: 100%;
+    height: calc(100% + 200vh);
+    background: url(./asset/space-safari-background.png) bottom/cover no-repeat;
+    transform: translate3d(0,200vh,0);
 }
