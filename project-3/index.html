@@ -4,8 +4,14 @@
 <html lang="en">
 
 <head>
+  
+   <!--Import p5js library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js"></script>
+    
     <meta charset="UTF-8">
-    <title>CodePen - Opening Door Animation Scroll</title>
+    <title>Worldship Homepage</title>
+    
     <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -30,9 +36,15 @@
         </div>
 
         <!--Sections-->
-        <sections class = "sec01">
-            <div class = "sec01_background" style="transform: translate(0px, 0px);">   
+        <sections class="sec01">
+            <div class="sec01_background">
             </div>
+            <div id = "p5jsplanet">
+            </div>
+        </sections>
+
+        <sections class="sec02">
+
         </sections>
 
     </div>
@@ -40,6 +52,8 @@
 
     <!-- partial -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+    <script src="./sketch.js"></script>
     <script src="./script.js"></script>
+    
 
 </body></html>

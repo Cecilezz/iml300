@@ -1,3 +1,7 @@
+body {
+    overscroll-behavior: none;
+}
+
 /*Open Door Scroll Effect*/
 .parent {
     position: relative;
@@ -29,7 +33,7 @@ img {
 
 /*Page*/
 .container {
-    height: 2880px;
+    height: 3240px;
 }
 
 /*Nav Bar*/
@@ -49,7 +53,13 @@ img {
     left: 0;
     top: 0;
     width: 100%;
-    height: calc(100% + 200vh);
-    background: url(./asset/space-safari-background.png) bottom/cover no-repeat;
-    transform: translate3d(0,200vh,0);
+    height: calc(100% + 400vh);
+    background: url(./asset/space_bg.png) bottom/cover no-repeat;
+}
+
+#p5jsplanet {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
