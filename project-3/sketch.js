@@ -1,5 +1,5 @@
-let cols = 200;
-let rows = 200;
+let cols = 100;
+let rows = 100;
 let vertices = [];
 
 function setup() {
@@ -46,9 +46,8 @@ function setup() {
 
 function draw() {
     clear();
-    orbitControl(4, 4);
     rotateX(frameCount * 0.03 % 360);
-    rotateY(200 + frameCount * 0.5 % 360);
+    rotateY(200 + frameCount % 360);
 
     light();
     planet();

@@ -1,17 +1,18 @@
-<!-- -->
+<!-- This project is an overview of the game world I wish to create, further expanding on the idea of my project 1 and 2. It illustrates some general information of the society in game, which is related to many of the problems in our society. Like many classic dystopian stories, I want this world to be able to reveal these social significances from a new perspective. This project would work both as an introduction to people who first get to know the game and an additional resource for people who want to discover more about the game. 
+-->
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  
-   <!--Import p5js library-->
+
+    <!--Import p5js library-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js"></script>
-    
+
     <meta charset="UTF-8">
     <title>Worldship Homepage</title>
-    
+
     <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -20,33 +21,38 @@
     <!-- partial:index.partial.html -->
     <div class="container">
 
-        <!--Floating-->
-        <button class="header_menu">
-        </button>
+       <div id = "title">WORLDSHIP</div>
+       <div id = "subtitle">An Overview</div>
+       
 
         <!--Opening-->
         <div class="parent">
             <div class="part left">
-                <img src="./asset/bg.png" alt="background">
+                <img class="open" style="float: right;" src="./asset/bg_left.png" alt="background">
             </div>
 
             <div class="part right">
-                <img style="float: right;" src="./asset/bg.png" alt="background">
+                <img class="open" style="float: left;" src="./asset/bg_right.png" alt="background">
             </div>
         </div>
 
         <!--Sections-->
+        <div class="sec_background">
+        </div>
+
         <sections class="sec01">
-            <div class="sec01_background">
-            </div>
-            <div id = "p5jsplanet">
-            </div>
+            <div id="p5jsplanet"></div>
         </sections>
 
-        <sections class="sec02">
+        <div class="ship">
+            <img class="spaceship" id = "img1" src="./asset/spaceship.png" alt="spaceship">
+        </div>
+                
+        <a class="fade" id="history" href = "history.html">Planet History</a> 
+        <a class="fade" id="enter" href = "geography.html">Spaceship Interior</a> 
+        
 
-        </sections>
-
+   
     </div>
 
 
@@ -54,6 +60,8 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
     <script src="./sketch.js"></script>
     <script src="./script.js"></script>
-    
 
-</body></html>
+
+</body>
+
+</html>
