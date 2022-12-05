@@ -110,6 +110,10 @@ a {
     top: 390vh;
 }
 
+#about {
+    top: 490vh;
+}
+
 .fade {
     font-size: 5vh;
     font-family: font, sans-serif;
